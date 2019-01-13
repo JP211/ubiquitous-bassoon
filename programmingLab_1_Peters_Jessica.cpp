@@ -66,15 +66,13 @@ int main()
 bool searchList(const long list[], int numElems, long value)
 {
     int index = 0;  // Used subscript to search the array
-    int position = -1; // Position of search value
     bool found = false; // If the value was found
     
     while (index < numElems && !found)
     {
         if (list[index] == value) // If the value is found 
         {
-            found = true; // Return boolean as true if winner
-            position = index;
+            found = true; // Return boolean as true if winner     
         }
         index++;
     }
